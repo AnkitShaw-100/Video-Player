@@ -10,8 +10,6 @@ const App = () => {
     controls: true,
     responsive: false,
     fluid: false,
-    // width: 300,
-    // height: 100,
     preload: 'auto',
     sources: [
       {

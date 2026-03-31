@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from 'react'
-import videojs from 'video.js'
-import 'video.js/dist/video-js.css'
-import 'videojs-http-source-selector'
+import videojs from 'video.js' // This is the engine that plays the video
+import 'video.js/dist/video-js.css' //Without this → controls look broken / invisible
+import 'videojs-http-source-selector' // Adds video quality selector (Auto / 720p / etc.)
 
+// options → Video.js configuration
+// onReady → callback when player is ready
 const VideoJs = ({ options, onReady }) => {
     const playerRef = useRef(null)
     const videoRef = useRef(null)
